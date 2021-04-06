@@ -1,2 +1,2 @@
 # designaudiopriors
-Design on Deep Audio Priors
+On the Design of Deep Priors for Unsupervised Audio Restoration
