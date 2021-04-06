@@ -170,7 +170,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--model_type', type=str, default='ddunet', help='Model type')
     parser.add_argument('--noise_type', type=str, default='gaussian', help='Noise type')
-    parser.add_argument('--dataset_name', type=str, default='LJSpeech', help='Dataset')
+    parser.add_argument('--dataset_name', type=str, default='digits', help='Dataset')
     parser.add_argument('--num_input_channels', type=int, default=2, help='No of Input channels')
     parser.add_argument('--num_output_channels', type=int, default=2, help='No of output channels')
     parser.add_argument('--dilation_type', type=str, default = 'constant', help = 'Type of dilation')
