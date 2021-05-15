@@ -64,21 +64,11 @@ def main(args):
         noisy_spec = torch.FloatTensor(noisy_spec).to(device)
 
 
-        if args.model_type == 'unet':
-            model = UNet().to(device)
-            print('Model chosen {}'.format(args.model_type))
-        elif args.model_type == 'dilated_unet':
-            model = DilatedUNet(args).to(device)
-            print('Model chosen {}'.format(args.model_type))
-        elif args.model_type == 'ddunet':
+        
+        if args.model_type == 'ddunet':
             model = DDUNet(args).to(device)
             print('Model chosen {}'.format(args.model_type))
-        elif args.model_type == 'harmonic_unet':
-            model = HarmonicUNet().to(device)
-            print('Model chosen {}'.format(args.model_type))
-        elif args.model_type == 'harmonic_ddunet':
-            model = HarmonicDDUNet(args).to(device)
-            print('Model chosen {}'.format(args.model_type))
+        
 
 
         results_dir = os.path.join(args.results_dir, args.dataset_name, args.model_type, args.noise_type, args.dilation_type)
