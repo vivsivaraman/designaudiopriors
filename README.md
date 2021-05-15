@@ -12,10 +12,13 @@ Refer to diagram below for a summary of the approach.
 * librosa
 
 
+## Denoising Example
+![Audio Denoising](eg_denoising.png)
+
+
+
 ### Perform Denoising
 Run ```./denoising/script.py``` to perform audio denoising on a single audio excerpt (LJSpeech, Digits, Piano). 
 
-## Example
-![Audio Denoising](eg_denoising.png)
 
 
